@@ -1,7 +1,7 @@
 var fuzzyTime = require('../index')
 
 var test1 = fuzzyTime('2015-12-27 23:16', {
-	setMinDays: 4, 
+	setMinDays: 44, 
 	days: 'hari', 
 	hours: 'jam', 
 	minutes: 'minit lepas', 

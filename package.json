@@ -1,6 +1,6 @@
 {
   "name": "fuzzy-time",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A simple timeago to update timestamp (e.g 4 days 12 hours 4 minutes ago) with no dependencies",
   "main": "index.js",
   "scripts": {

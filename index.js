@@ -46,7 +46,7 @@ function fuzzyTime(ago, options) {
     // the rest of timeDiff is number of days
     var getDays = timeDiff;
 
-    this.formatDate = function(d) {
+    this.formatDate = function() {
         var d = this.ago
         var mArr = this.setMonthArray
         var date = new Date(d)
@@ -67,7 +67,7 @@ function fuzzyTime(ago, options) {
                 output = getDays + ' ' + this.days + ' ' + getMinutes + ' ' + this.minutes
             }
         } else {
-            output = this.on + ' ' + this.formatDate(ago)
+            output = this.on + ' ' + this.formatDate()
         }
 
     } else {
