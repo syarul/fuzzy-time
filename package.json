@@ -1,10 +1,12 @@
 {
   "name": "fuzzy-time",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A simple timeago to update timestamp (e.g 4 days 12 hours 4 minutes ago) with no dependencies",
   "main": "index.js",
   "scripts": {
-    "test": "node test/test.js"
+    "test": "node test/test.js",
+    "distcompress": "browserify index.js --standalone fuzzy-time | uglifyjs > dist/fuzzy-time.min.js",
+    "dist": "browserify index.js --standalone fuzzy-time > dist/fuzzy-time.js"
   },
   "repository": {
     "type": "git",
