@@ -9,7 +9,7 @@ var test1 = fuzzyTime('2015-12-27 23:16', {
 	setMonthArray: ['Jan', 'Feb', 'Mac', 'Apr', 'Mei', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dis']
 })
 
-var test2 = fuzzyTime('2016-01-09 23:16')
+var test2 = fuzzyTime('2016-01-09 23:16', {dateFormat: 'simple'})
 
 console.log(test1)
 console.log(test2)

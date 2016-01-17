@@ -31,6 +31,7 @@ fuzzyTime(date, options)
 - **minutes**: change the minutes string
 - **on**: change the on string
 - **setMonthArray**: Set New Array for Month ( eg: ['Jan', 'Feb', 'Mac', 'Apr', 'Mei', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dis'])
+- **dateFormat**: date format, can be set to 'simple' format which output ( eg: July 20 '15)
 
 #### Sample Usage with Options
 
