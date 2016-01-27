@@ -1,12 +1,12 @@
 var fuzzyTime = require('../index')
 
-var test1 = fuzzyTime('2015-12-27 23:16', {
-	setMinDays: 44, 
+var test1 = fuzzyTime('December 17, 2015 03:24:00', {
+	setMinDays: 5, 
 	days: 'hari', 
 	hours: 'jam', 
 	minutes: 'minit lepas', 
 	on: 'pada',
-	setMonthArray: ['Jan', 'Feb', 'Mac', 'Apr', 'Mei', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dis']
+	setMonthArray: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
 })
 
 var test2 = fuzzyTime('2016-01-09 23:16', {dateFormat: 'simple'})

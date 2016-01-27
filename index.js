@@ -13,7 +13,7 @@ function fuzzyTime(ago, options) {
     this.minutes = options.minutes || 'minutes ago';
     this.on = options.on || 'on';
     this.ago = ago
-    this.setMonthArray = options.setMonthArray || ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    this.setMonthArray = options.setMonthArray || ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec']
     this.setMinDays = options.setMinDays || 7;
     this.dateFormat = options.dateFormat || {};
     
@@ -50,13 +50,12 @@ function fuzzyTime(ago, options) {
     this.formatDate = function() {
         var d = this.ago
         var mArr = this.setMonthArray
-        var mStack = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec']
         var date = new Date(d)
         var dd = date.getDate(); 
         var mm = date.getMonth();
         var yyyy = date.getFullYear(); 
         if (this.dateFormat == 'simple'){
-            return d = mStack[mm] + ' ' + dd + '\' ' + (yyyy).toString().slice(2)
+            return d = mArr[mm] + ' ' + dd + '\' ' + (yyyy).toString().slice(2)
         } else {
             return d = dd +' '+ mArr[mm] +' '+ yyyy
         }
