@@ -30,7 +30,7 @@ fuzzyTime(date, options)
 - **hours**: change the hours string
 - **minutes**: change the minutes string
 - **on**: change the on string
-- **setMonthArray**: Set New Array for Month ( eg: ['Jan', 'Feb', 'Mac', 'Apr', 'Mei', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dis'])
+- **setMonthArray**: Set New Array for Month ( eg: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'])
 - **dateFormat**: date format, can be set to 'simple' format which output ( eg: July 20 '15)
 
 #### Sample Usage with Options
@@ -42,7 +42,8 @@ var getDate = fuzzyTime('2015-12-27 23:16', {
 	hours: 'jam', 
 	minutes: 'minit lepas', 
 	on: 'pada',
-	setMonthArray: ['Jan', 'Feb', 'Mac', 'Apr', 'Mei', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dis']
+	setMonthArray: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+    dateFormat: 'simple'
 })
 
 console.log(getDate)
