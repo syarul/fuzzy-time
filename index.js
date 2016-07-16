@@ -75,7 +75,11 @@ function fuzzyTime(ago, options) {
         }
 
     } else {
-        output = getHours + ' ' + this.hours + ' ' + getMinutes + ' ' + this.minutes
+        if (getHours != 0){
+            output = getHours + ' ' + this.hours + ' ' + getMinutes + ' ' + this.minutes
+        } else {
+            output = getMinutes + ' ' + this.minutes
+        }
     }
 
     return output

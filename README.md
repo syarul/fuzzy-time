@@ -36,15 +36,29 @@ fuzzyTime(date, options)
 #### Sample Usage with Options
 
 ```javascript
-var getDate = fuzzyTime('2015-12-27 23:16', {
-	setMinDays: 4, 
-	days: 'hari', 
-	hours: 'jam', 
-	minutes: 'minit lepas', 
-	on: 'pada',
-	setMonthArray: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
-    dateFormat: 'simple'
-})
+var opts = {
+  setMinDays: 4,
+  days: 'hari',
+  hours: 'jam',
+  minutes: 'minit lepas',
+  on: 'pada',
+  setMonthArray: [
+    'Januari',
+    'Februari',
+    'Mac',
+    'April',
+    'Mei',
+    'Jun',
+    'Julai',
+    'Ogos',
+    'September',
+    'Oktober',
+    'November',
+    'Disember'
+  ],
+  dateFormat: 'simple'
+}
+var getDate = fuzzyTime('2015-12-27 23:16', opts)
 
 console.log(getDate)
 ```
